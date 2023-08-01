@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Ecommerce Dashboard
 
-## Getting Started
+Project Description:
+This project is an Ecommerce Dashboard that allows users to manage products, billboards, categories, product sizes, and view orders. It also provides an overview of orders over time and supports multiple store dashboards. The dashboard is built using components from Shadcn and utilizes CSS, TypeScript, and JavaScript. The backend database is powered by PlanetScale, Prisma, and MySQL, and user authentication is handled through Clerk.
+Table of Contents
 
-First, run the development server:
+    Introduction
+    Features
+    Getting Started
+        Prerequisites
+        Installation
+    Usage
+    Database
+    Authentication
+    Contributing
+    License
+    Contact
+    Acknowledgments
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Provide a more detailed introduction to the project. Explain the purpose of the dashboard, its intended users, and the benefits it offers.]
+Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Product Management: Users can add, modify, and delete products that they want to display on the Ecommerce website. They can set product details, images, prices, and availability.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    Billboard Management: Admins can control billboards to highlight specific products or promotions on the website's homepage.
 
-## Learn More
+    Category Management: Users can create and manage categories to organize products effectively.
 
-To learn more about Next.js, take a look at the following resources:
+    Product Size: Support for different product sizes, such as small, medium, and large, is available.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Order Overview: The dashboard provides an overview of orders over time, allowing users to track sales performance.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Multiple Store Dashboards: If applicable, users can switch between different store dashboards, each with its own product catalog and order history.
 
-## Deploy on Vercel
+Getting Started
+Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    [List the prerequisites, such as Node.js, npm, and any specific versions required for the project.]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Installation
+
+    [Provide step-by-step instructions on how to clone the repository and install the project dependencies.]
+
+    [Explain how to set up the database using Prisma and MySQL, including any required configuration.]
+
+Usage
+
+[Describe how to run the application and access the dashboard. Provide any relevant login credentials or initial setup steps.]
+Database
+
+[Explain the structure of the database, including the various tables and relationships used to store product data, order details, etc.]
+Authentication
+
+[Provide information about how user authentication is handled through Clerk. Explain the registration and login processes.]
+Contributing
+
+[Include guidelines for other developers who wish to contribute to the project. Specify the process for submitting pull requests, reporting issues, and discussing new features.]
+License
+
+[Specify the license under which the project is released. For example, MIT, Apache, GPL, etc.]
+Contact
+
+[Provide contact information for the project maintainer or team, such as an email address or a link to a public communication channel.]
+Acknowledgments
+
+[List any individuals, organizations, or resources that have been helpful during the development of the project.]
