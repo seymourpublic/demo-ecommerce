@@ -26,13 +26,13 @@ Features
 
     Billboard Management: Admins can control billboards to highlight specific products or promotions on the website's homepage.
 
-    Category Management: Users can create and manage categories to organize products effectively.
+    Category Management: Admins can create and manage categories to organize products effectively.
 
     Product Size: Support for different product sizes, such as small, medium, and large, is available.
 
-    Order Overview: The dashboard provides an overview of orders over time, allowing users to track sales performance.
+    Order Overview: The dashboard provides an overview of orders over time, allowing Admins to track sales performance.
 
-    Multiple Store Dashboards: If applicable, users can switch between different store dashboards, each with its own product catalog and order history.
+    Multiple Store Dashboards: If applicable, Admins can switch between different store dashboards, each with its own product catalog and order history.
 
 Getting Started
 Prerequisites
