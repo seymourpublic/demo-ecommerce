@@ -1,8 +1,8 @@
-ECOMMERCE DASHBOARD
+###ECOMMERCE DASHBOARD
 
 Project Description:
 This project is an Ecommerce Dashboard that allows users to manage products, billboards, categories, product sizes, and view orders. It also provides an overview of orders over time and supports multiple store dashboards. The dashboard is built using components from Shadcn and utilizes CSS, TypeScript, and JavaScript. The backend database is powered by PlanetScale, Prisma, and MySQL, and user authentication is handled through Clerk.
-Table of Contents
+###Table of Contents
 
     Introduction
     Features
@@ -17,7 +17,7 @@ Table of Contents
     Contact
     Acknowledgments
 
-INTRODUCTION
+###INTRODUCTION
 
 [Provide a more detailed introduction to the project. Explain the purpose of the dashboard, its intended users, and the benefits it offers.]
 Features
@@ -34,7 +34,7 @@ Features
 
     Multiple Store Dashboards: If applicable, Admins can switch between different store dashboards, each with its own product catalog and order history.
 
-Getting Started
+####Getting Started
 Prerequisites
 
     [List the prerequisites, such as Node.js, npm, and any specific versions required for the project.]
@@ -44,11 +44,12 @@ Installation
     [Provide step-by-step instructions on how to clone the repository and install the project dependencies.]
 
     [Explain how to set up the database using Prisma and MySQL, including any required configuration.]
-USAGE
+####USAGE
 The following examples demonstrate how to use functions from the "actions" folder.
 getGraphRevenue
 
 The getGraphRevenue function fetches revenue data from the database and converts it into a format suitable for a graph.
+<
 ```typescript
 
     import { getGraphRevenue } from "@/actions/revenue-utils";
@@ -58,10 +59,12 @@ The getGraphRevenue function fetches revenue data from the database and converts
     console.log(graphData);
 
 ```
+>
 
 getSalesCount
 
 The getSalesCount function retrieves the total sales count for a specific store from the database.
+<
 ```typescript
 
     import { getSalesCount } from "@/actions/sales-utils";
@@ -71,9 +74,11 @@ The getSalesCount function retrieves the total sales count for a specific store 
     console.log("Total Sales Count:", salesCount);
 
 ```
+>
 getStockCount
 
 The getStockCount function fetches the total stock count of active products for a specific store from the database.
+<
 ```typescript
 
     import { getStockCount } from "@/actions/stock-utils";
@@ -83,10 +88,10 @@ The getStockCount function fetches the total stock count of active products for 
     console.log("Total Stock Count:", stockCount);
 
 ```
+>
+###API DOCUMENTATION
 
-API DOCUMENTATION
-
-API Endpoints Documentation
+####API Endpoints Documentation
 
 This API module contains three endpoints to perform CRUD (Create, Read, Update, Delete) operations on billboards. The endpoints are used to interact with the prismadb database to fetch, create, update, and delete billboard data.
 Table of Contents
