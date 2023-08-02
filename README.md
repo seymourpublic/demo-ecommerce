@@ -47,6 +47,45 @@ Installation
 
 Usage
 
+The following examples demonstrate how to use functions from the "actions" folder.
+getGraphRevenue
+
+The getGraphRevenue function fetches revenue data from the database and converts it into a format suitable for a graph.
+
+typescript
+
+import { getGraphRevenue } from "@/actions/revenue-utils";
+
+const storeId = "your-store-id";
+const graphData = await getGraphRevenue(storeId);
+console.log(graphData);
+
+getSalesCount
+
+The getSalesCount function retrieves the total sales count for a specific store from the database.
+
+typescript
+
+import { getSalesCount } from "@/actions/sales-utils";
+
+const storeId = "your-store-id";
+const salesCount = await getSalesCount(storeId);
+console.log("Total Sales Count:", salesCount);
+
+getStockCount
+
+The getStockCount function fetches the total stock count of active products for a specific store from the database.
+
+typescript
+
+import { getStockCount } from "@/actions/stock-utils";
+
+const storeId = "your-store-id";
+const stockCount = await getStockCount(storeId);
+console.log("Total Stock Count:", stockCount);
+
+
+
 [Describe how to run the application and access the dashboard. Provide any relevant login credentials or initial setup steps.]
 Database
 
