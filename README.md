@@ -52,37 +52,37 @@ getGraphRevenue
 
 The getGraphRevenue function fetches revenue data from the database and converts it into a format suitable for a graph.
 
-typescript
+    typescript
 
-import { getGraphRevenue } from "@/actions/revenue-utils";
+    import { getGraphRevenue } from "@/actions/revenue-utils";
 
-const storeId = "your-store-id";
-const graphData = await getGraphRevenue(storeId);
-console.log(graphData);
+    const storeId = "your-store-id";
+    const graphData = await getGraphRevenue(storeId);
+    console.log(graphData);
 
 getSalesCount
 
 The getSalesCount function retrieves the total sales count for a specific store from the database.
 
-typescript
+    typescript
 
-import { getSalesCount } from "@/actions/sales-utils";
+    import { getSalesCount } from "@/actions/sales-utils";
 
-const storeId = "your-store-id";
-const salesCount = await getSalesCount(storeId);
-console.log("Total Sales Count:", salesCount);
+    const storeId = "your-store-id";
+    const salesCount = await getSalesCount(storeId);
+    console.log("Total Sales Count:", salesCount);
 
 getStockCount
 
 The getStockCount function fetches the total stock count of active products for a specific store from the database.
 
-typescript
+    typescript
 
-import { getStockCount } from "@/actions/stock-utils";
+    import { getStockCount } from "@/actions/stock-utils";
 
-const storeId = "your-store-id";
-const stockCount = await getStockCount(storeId);
-console.log("Total Stock Count:", stockCount);
+    const storeId = "your-store-id";
+    const stockCount = await getStockCount(storeId);
+    console.log("Total Stock Count:", stockCount);
 
 
 
