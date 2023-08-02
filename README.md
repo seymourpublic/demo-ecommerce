@@ -102,6 +102,8 @@ Table of Contents
 - [GET /api/category/:categoryId](#get-apicategorycategoryid)
 - [DELETE /api/category/:categoryId/:storeId](#delete-apicategorycategoryidstoreid)
 - [PATCH /api/category/:categoryId/:storeId](#patch-apicategorycategoryidstoreid)
+- [POST /api/categories/:storeId](#post-apicategoriesstoreid)
+- [GET /api/categories/:storeId](#get-apicategoriesstoreid)
 
 GET /api/billboard/:billboardId
 
@@ -226,6 +228,48 @@ The request body must contain a JSON object with the following properties:
 - If the user is not the owner of the store associated with the category, the endpoint will return a 405 Method Not Allowed response with the message "Unauthorized."
 - If the category is successfully updated in the database, the endpoint will return a 200 OK response with the updated category data in JSON format.
 - If the requested category is not found in the database, the endpoint will return a 404 Not Found response.
+
+---
+
+## `POST /api/categories/:storeId`
+
+This endpoint allows creating a new category for a specific store.
+
+### Request Parameters
+
+- `storeId` (required): The ID of the store to which the category will be added.
+
+### Request Headers
+
+- The endpoint expects the `Authorization` header with a valid JWT token for authentication.
+
+### Request Body
+
+The request body must contain a JSON object with the following properties:
+
+- `name` (required): The name of the new category.
+- `billboardId` (required): The ID of the associated billboard for the new category.
+
+### Response
+
+- If the user is not authenticated, the endpoint will return a 403 Forbidden response with the message "Unauthenticated."
+- If the `name`, `billboardId`, or `storeId` is missing or invalid in the request, the endpoint will return a 400 Bad Request response with the appropriate error message.
+- If the user is not the owner of the store associated with the category, the endpoint will return a 405 Method Not Allowed response with the message "Unauthorized."
+- If the category is successfully created and added to the database, the endpoint will return a 200 OK response with the created category data in JSON format.
+
+## `GET /api/categories/:storeId`
+
+This endpoint fetches all categories associated with a specific store.
+
+### Request Parameters
+
+- `storeId` (required): The ID of the store for which to retrieve categories.
+
+### Response
+
+- If the `storeId` is not provided in the request parameters, the endpoint will return a 400 Bad Request response with the message "Store id is required."
+- If categories are found for the specified store, the endpoint will return a 200 OK response with the categories data in JSON format.
+- If no categories are found for the specified store, the endpoint will return an empty JSON array [].
 
 ---
 
