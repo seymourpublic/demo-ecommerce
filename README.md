@@ -273,22 +273,3 @@ This endpoint fetches all categories associated with a specific store.
 
 ---
 
-[Describe how to run the application and access the dashboard. Provide any relevant login credentials or initial setup steps.]
-Database
-
-[Explain the structure of the database, including the various tables and relationships used to store product data, order details, etc.]
-Authentication
-
-[Provide information about how user authentication is handled through Clerk. Explain the registration and login processes.]
-Contributing
-
-[Include guidelines for other developers who wish to contribute to the project. Specify the process for submitting pull requests, reporting issues, and discussing new features.]
-License
-
-[Specify the license under which the project is released. For example, MIT, Apache, GPL, etc.]
-Contact
-
-[Provide contact information for the project maintainer or team, such as an email address or a link to a public communication channel.]
-Acknowledgments
-
-[List any individuals, organizations, or resources that have been helpful during the development of the project.]
